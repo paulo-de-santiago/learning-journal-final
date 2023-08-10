@@ -1,0 +1,396 @@
+ *, *::before, *::after {
+    box-sizing: border-box;
+} 
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    min-width: 414px;
+}
+
+
+/* =================
+   index.html
+   ================= */
+
+/*  Header */
+.header, 
+.header-icon-title,
+.links {
+    display: flex;
+}
+
+.header {
+    text-align: center;
+    justify-content: space-between;
+}
+
+ .icon { 
+     /* Layout */
+    margin: 6px;
+    width: 23.16px;
+    height:23.16px;
+    position: relative;
+
+    top: 20px;
+    left: 5px; 
+}
+
+.links {  
+    align-items: center; 
+    margin: 6px;
+    
+    color: #090909;
+    text-align: right;
+    font-size: 0.625rem;/*  12px */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+p {
+    margin: 5px;
+}
+
+/* Hero */
+
+.hero-post {
+ 
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.31) 100%), url('/images/blog-image-hero.png'), lightgray 0px -255.741px / 100% 188.396% no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+
+
+.div-hero {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    
+    color: #FFFFFF;
+    font-style: normal;
+    line-height: normal;  
+    padding-top: 3.813rem;
+    width: 90%;
+    flex-shrink: 0;
+
+} 
+
+.div-hero-text {
+
+    padding-top: 8rem; 
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+
+}
+
+.date-hero {
+     font-size: 0.75rem;
+     font-weight: 400; 
+
+}
+
+.title-hero {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 108.2%; /* 34.624px */
+    letter-spacing: -0.96px;
+}
+
+.text-hero {
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+ 
+
+/* Main list */
+
+.article {
+
+}
+
+.article-listing,
+.article-post, 
+.footer {
+     display: flex; 
+     flex-direction: column;
+     justify-content: center;
+     align-content: center;
+    
+}
+
+
+.article-post {
+    /* Layout */
+    padding: 30px;      
+}
+
+.article-date, 
+.article-title, 
+.article-body-preview,
+.footer {
+    font-style: normal;
+    
+}
+
+
+.article-date {
+    /* Typography */
+    color: #000;
+    font-size: 0.8858rem; /* 14.173px */
+    font-weight: 400;
+    line-height: normal;
+}
+
+.article-title {
+    color: #141414;
+    font-size: 1.5rem; /* 24px */
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 108.2%; /* 25.968px */
+}
+.article-body-preview {
+    color: #505050;
+    font-size: 1rem ; /* 16px */
+    font-weight: 400;
+    line-height: 25px; /* 125% */
+ /*    padding: 8px; */
+}
+
+
+/* Button */
+
+.article-listing-button-open,
+.article-listing-button-close {
+    color:#000;
+    /* Layout */
+ /*    display: inline-block;
+    margin: 0 auto; */
+    height: 20px;
+
+
+ 
+    /* Typography */
+
+    font-size: 0.8rem;
+    font-weight: 700;
+ /*    line-height: 20px; */
+    letter-spacing: 0em;
+    text-align: center;
+    
+    background: none;
+    border: none;
+    border-bottom: 0.5px solid #000;
+    
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
+    
+    text-underline-position: bottom;
+    
+
+}
+
+.article-listing-button-open:hover,
+.article-listing-button-open:focus,
+.article-listing-button-close:hover,
+.article-listing-button-close:focus
+ {
+    font-size: 0.9rem;
+    outline: none;
+    box-shadow: none;
+    height: 25px;
+
+}
+
+.article-listing-button-open:active,
+.article-listing-button-close:active,
+ {
+    color: #505050;
+}
+
+.article-listing-button-close {
+    display: block;
+}
+
+/* Footer */
+
+.footer{
+     /* Layout */
+    flex-direction: row;
+    height: 105px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    
+    /* Style */
+    background: #202020;
+    margin-top: 60px;
+ 
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.footer-title {
+    /* Typography */
+    color: #ECECEC;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 108.2%; /* 12.984px */
+    letter-spacing: -0.36px;
+    
+}
+
+.footer-copyright {
+        /* Typography */
+    color: #D7D7D7;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 125%; /* 15px */
+}
+
+/* MEDIA QUERY BIGGER SCREENS */
+
+/* 
+
+
+
+.article-listing {
+    
+       display: inline-grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto auto;
+      
+      
+      grid-template-areas: "header header header"
+                            "article article article"
+                            "footer footer footer"
+                   
+      
+
+
+}
+
+
+
+.recent-posts {
+    grid-area: header;
+    text-align: center;
+}
+
+.article-listing-button {
+    grid-area: footer;
+}
+
+
+
+
+.article {
+    display: flex; 
+    flex-direction: column;
+
+     flex-wrap: wrap;
+    flex-direction: row; 
+     justify-content: space-between; 
+     gap: 5% 5%; 
+      gap: 10rem; 
+    grid-area: article;  
+} */
+
+
+
+
+
+/* 
+
+
+/* =================
+   bio.html  MyLearningJournal
+   ================= */
+.section-bio {
+   /*  max-width: 414px; */
+    
+    /* Typography */  
+    color: #151515;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.96px;
+}
+
+.container-bio {
+     display: flex;
+     flex-direction: column; 
+     width: 90%;
+     margin: 0 auto;
+}
+
+.article-date-bio {
+    margin-top: 30px;
+    font-size: 0.625rem; /* ss */ 
+    line-height: 108.2%; /* 34.624px */  
+}
+
+.bio-h1,
+.bio-h2
+ {
+    font-weight: 700;
+}
+
+.bio-h1 {
+    font-size: 2rem;
+    letter-spacing: normal;
+    line-height: 2rem;
+    font-weight: 700; 
+}
+
+.img-bio {
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+
+.container-posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.recent-posts {
+    text-align: center;
+    
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.article-post-bio:first-child {
+    padding-top: 15px;
+}
+   
+
+
+
+/* =================
+   aboutMe.html
+   ================= */
+   
+   
+.pic-aboutme {
+    width: 100px;
+    border-radius: 50%;
+ 
+}
+   
+   /* =================
+   bio.html
+   ================= */

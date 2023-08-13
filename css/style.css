@@ -262,71 +262,6 @@ p {
     line-height: 125%; /* 15px */
 }
 
-/* MEDIA QUERY BIGGER SCREENS */
-
-
-@media screen and (min-width: 600px)  {
-    .article {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .article-post {
-        flex: 33%;
-        max-width: 100%;
-    }
-  }
-
-/* 
-  @media screen and (min-width: 1400px) {
-    .article {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .article-post {
-        flex: 50%;
-        max-width: 100%;
-    }
-  } */
-
-/* 
- @media screen(min-width: 415px) {
-    .article {
-    
-        display: grid;
-
-    } */
-/*         grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
-         */
-        
-/*         grid-template-areas: "header header header"
-                              "article article article"
-                              "footer footer footer"
-                     
-        
-  
-   */
-  
-    
- 
-
-
-/* 
-
- .article {
-    display: flex; 
-    flex-direction: column;
-
-     flex-wrap: wrap;
-    flex-direction: row; 
-     justify-content: space-between; 
-     gap: 5% 5%; 
-      gap: 10rem; 
-    grid-area: article;  
-}  */
-
 
 
 
@@ -408,3 +343,80 @@ p {
    /* =================
    bio.html
    ================= */
+
+   /* Media queries */
+
+/* About Me*/
+
+@media screen and (min-width: 600px)  {
+    .article {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .article-post {
+        flex: 33%;
+        max-width: 100%;
+    }
+  }
+
+/* About Me */
+@media screen and (min-width: 600px) {
+
+
+
+    /* Container header */
+     .container-bio-header {
+        display: flex; 
+        align-items: center;
+    }
+
+    .pic-aboutme {
+        width: 20%;
+    }
+
+    .bio-h1 {
+        color: #151515;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 108.2%; /* 38.952px */
+        letter-spacing: -1.08px;
+    }
+
+    .container-text {
+        width: 90%
+    }
+    .container-bio-text{
+      
+        padding-left: 30px;
+    }
+
+    /* Section bio */
+    .section-bio {
+        display: grid;
+        grid-template-areas: "header header header"
+                    "text text text"
+                    "posts posts posts";
+
+    }
+
+    .container-bio-header {
+
+        grid-area: header;
+
+    }
+
+    .container-text {
+        grid-area: text;
+
+    }
+    .container-posts{
+        grid-area: posts;
+    }
+
+} 
+    
+
+
+
+

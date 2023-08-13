@@ -346,9 +346,15 @@ p {
 
    /* Media queries */
 
-/* About Me*/
+/* General*/
 
 @media screen and (min-width: 600px)  {
+
+    .header-secondary,
+    .links-secondary {
+        font-size: 1.5rem;
+    }
+
     .article {
         display: flex;
         flex-wrap: wrap;
@@ -362,7 +368,6 @@ p {
 
 /* About Me */
 @media screen and (min-width: 600px) {
-
 
 
     /* Container header */
@@ -384,11 +389,15 @@ p {
     }
 
     .container-text {
-        width: 90%
+        width: 80%;
+        align-self: center;
+        margin: 30px;
+        text-align: justify;
+
     }
     .container-bio-text{
-      
         padding-left: 30px;
+        text-align: justify;
     }
 
     /* Section bio */
@@ -397,19 +406,20 @@ p {
         grid-template-areas: "header header header"
                     "text text text"
                     "posts posts posts";
-
+        
+        margin-top: 50px;
     }
-
+    .container-bio {
+        margin-top: 50px;
+    }
     .container-bio-header {
-
         grid-area: header;
-
     }
 
     .container-text {
         grid-area: text;
-
     }
+
     .container-posts{
         grid-area: posts;
     }

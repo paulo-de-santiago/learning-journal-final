@@ -23,21 +23,27 @@ body {
     display: flex;
 }
 
+
 .header {
     text-align: center;
     justify-content: space-between;
+
 }
 
- .icon { 
-     /* Layout */
-    margin: 6px;
-    width: 23.16px;
-    height:23.16px;
-    position: relative;
-
-    top: 20px;
-    left: 5px; 
+.icon { 
+    margin-top: 2.1rem;
+    margin-left: 1rem;
+    padding: 0.188rem;
+    width: 1.448rem;
+    height: 1.448rem;
 }
+ 
+.header-icon-title {
+    /* padding-top: 30px; */
+    justify-content: center;
+    align-self: center;
+}
+
 
 .links {  
     align-items: center; 

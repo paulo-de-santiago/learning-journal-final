@@ -1,101 +1,166 @@
 <!DOCTYPE html>
 
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <title>My Learning Journal</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap" rel="stylesheet">
-          <meta name="Scrimba" content="Paulo Santiago">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header class="header">
-            <div class="header-icon-title">
-                <img src="/images/image17.png" alt="journal icon" class="icon">
-                <h4><a href="/bio.html">My learning journal</a></h4>
-            </div>
-           <div class="links">
-                <p><a href="/index.html">HOME</a></p>
-                <p><a href="/aboutMe.html">ABOUT ME</a></p>    
-           </div>     
-        </header>
-        
-        <section class="hero-post" id="hero-post"> 
-     <!--  <div class="div-hero" id="div-hero">  -->
-            <div class="div-hero div-hero-text" id="div-hero">
-                <p class="date-hero" id="article-date-hero">JULY 23, 2023</p>
-                <h1 class="title-hero" id="article-title-hero">My new journey as a bootcamp student.</h1>
-                <p class="preview-hero" id="article-preview-hero">After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
-            </div>
-<!--       </div>    --> 
-        </section>
-        
-        <main class="article-listing" id="article-listing" >
-          <!--   <h2 class="recent-posts" id="recent-posts">Recent posts</h2> -->
-            <section class="article" id="article">
-            <article class="article-post" id="article-post">
-                <img src="/images/blog-image-02.png" alt="Computer screen with React symbol and code.">
-                <p class="article-date" id="article-date">JULY 23, 2022</p>
-                <h2 class="article-title" id="article-title">Blog one</h2>
-                <p class="article-body-preview" id="article-body-preview">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>   
-            </article>
-              <article class="article-post" id="article-post">
-                <img src="/images/blog-image-03.png" alt="Girl dressed casually on the beach in a sunny day.">
-                <p class="article-date" id="article-date">JULY 23, 2022</p>
-                <h2 class="article-title" id="article-title">Blog two</h2>
-                <p class="article-body-preview" id="article-body-preview">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>   
-            </article>
-            <article class="article-post" id="article-post">
-                <img src="/images/blog-image-04.png" alt="Laptop on wook desk with the message:&quot;I design and develop experiences that make people's lives simple.&quot;">
-                <p class="article-date" id="article-date">JULY 23, 2022</p>
-                <h2 class="article-title" id="article-title">Blog three</h2>
-                <p class="article-body-preview" id="article-body-preview">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>   
-            </article>
-            <!-- TO DO -->
-            <article class="article-post" id="article-post">
-                <img src="/images/blog-image-01.png" alt="Computer screen with React symbol and code.">
-                <p class="article-date" id="article-date">JULY 23, 2022</p>
-                <h2 class="article-title" id="article-title">Blog one</h2>
-                <p class="article-body-preview" id="article-body-preview">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>   
-            </article>
-              <article class="article-post" id="article-post">
-                <img src="/images/blog-image-05.png" alt="Girl dressed casually on the beach in a sunny day.">
-                <p class="article-date" id="article-date">JULY 23, 2022</p>
-                <h2 class="article-title" id="article-title">Blog two</h2>
-                <p class="article-body-preview" id="article-body-preview">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>   
-            </article>
-            <article class="article-post" id="article-post">
-                <img src="/images/blog-image-06.png" alt="Laptop on wook desk with the message:&quot;I design and develop experiences that make people's lives simple.&quot;">
-                <p class="article-date" id="article-date">JULY 23, 2022</p>
-                <h2 class="article-title" id="article-title">Blog three</h2>
-                <p class="article-body-preview" id="article-body-preview">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>   
-            </article>
-            </section>
-            
-            
-              <!-- For JS -->
-             <section class="article article-opened" id="article article-opened">
-             </section>
-             
-        <button class="article-listing-button-open" id="article-listing-button-open" data-close="close">View More</button>
-             <!-- For JS -->
-            
-             
-           </main>
-        <footer class="footer" id="footer">
-            <div class="footer-text" id="footer-text">
-                <p class="footer-title" id="footer-title">My Learning Journal</p>
-                <p class="footer-copyright" id="footer-copyright">Copyright ©2023</p> 
-            </div>
-        </footer>
-               <!--   <img src="/images/blog-image-01.png"> -->
-  
-        <script src="home.js"></script>
-    </body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <title>My Learning Journal</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="Scrimba" content="Paulo Santiago" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-icon-title">
+        <img src="/images/image17.png" alt="journal icon" class="icon" />
+        <h4><a href="/bio.html">My learning journal</a></h4>
+      </div>
+      <div class="links">
+        <p><a href="/index.html">HOME</a></p>
+        <p><a href="/aboutMe.html">ABOUT ME</a></p>
+      </div>
+    </header>
+
+    <section class="hero-post" id="hero-post">
+      <!--  <div class="div-hero" id="div-hero">  -->
+      <div class="div-hero div-hero-text" id="div-hero">
+        <p class="date-hero" id="article-date-hero">JULY 23, 2023</p>
+        <h1 class="title-hero" id="article-title-hero">
+          My new journey as a bootcamp student.
+        </h1>
+        <p class="preview-hero" id="article-preview-hero">
+          After several months of learning in the Frontend Developer Career
+          Path, I've made the big jump over to the Bootcamp to get expert code
+          reviews of my Solo Projects projects and meet like-minded peers.
+        </p>
+      </div>
+      <!--       </div>    -->
+    </section>
+
+    <main class="article-listing" id="article-listing">
+      <!--   <h2 class="recent-posts" id="recent-posts">Recent posts</h2> -->
+      <section class="article" id="article">
+        <article class="article-post" id="article-post">
+          <img
+            src="/images/blog-image-02.png"
+            alt="Computer screen with React symbol and code."
+          />
+          <p class="article-date" id="article-date">JULY 23, 2022</p>
+          <h2 class="article-title" id="article-title">Blog one</h2>
+          <p class="article-body-preview" id="article-body-preview">
+            I'm excited to start a new learning journey as a Scrimba Bootcamp
+            student! After several months of learning in the Frontend Developer
+            Career Path.
+          </p>
+        </article>
+        <article class="article-post" id="article-post">
+          <img
+            src="/images/blog-image-03.png"
+            alt="Girl dressed casually on the beach in a sunny day."
+          />
+          <p class="article-date" id="article-date">JULY 23, 2022</p>
+          <h2 class="article-title" id="article-title">Blog two</h2>
+          <p class="article-body-preview" id="article-body-preview">
+            I'm excited to start a new learning journey as a Scrimba Bootcamp
+            student! After several months of learning in the Frontend Developer
+            Career Path.
+          </p>
+        </article>
+        <article class="article-post" id="article-post">
+          <img
+            src="/images/blog-image-04.png"
+            alt='Laptop on wook desk with the message:"I design and develop experiences that make people&apos;s lives simple."'
+          />
+          <p class="article-date" id="article-date">JULY 23, 2022</p>
+          <h2 class="article-title" id="article-title">Blog three</h2>
+          <p class="article-body-preview" id="article-body-preview">
+            I'm excited to start a new learning journey as a Scrimba Bootcamp
+            student! After several months of learning in the Frontend Developer
+            Career Path.
+          </p>
+        </article>
+        <!-- TO DO -->
+        <article class="article-post" id="article-post">
+          <img
+            src="/images/blog-image-01.png"
+            alt="Computer screen with React symbol and code."
+          />
+          <p class="article-date" id="article-date">JULY 23, 2022</p>
+          <h2 class="article-title" id="article-title">Blog one</h2>
+          <p class="article-body-preview" id="article-body-preview">
+            I'm excited to start a new learning journey as a Scrimba Bootcamp
+            student! After several months of learning in the Frontend Developer
+            Career Path.
+          </p>
+        </article>
+        <article class="article-post" id="article-post">
+          <img
+            src="/images/blog-image-05.png"
+            alt="Girl dressed casually on the beach in a sunny day."
+          />
+          <p class="article-date" id="article-date">JULY 23, 2022</p>
+          <h2 class="article-title" id="article-title">Blog two</h2>
+          <p class="article-body-preview" id="article-body-preview">
+            I'm excited to start a new learning journey as a Scrimba Bootcamp
+            student! After several months of learning in the Frontend Developer
+            Career Path.
+          </p>
+        </article>
+        <article class="article-post" id="article-post">
+          <img
+            src="/images/blog-image-06.png"
+            alt='Laptop on wook desk with the message:"I design and develop experiences that make people&apos;s lives simple."'
+          />
+          <p class="article-date" id="article-date">JULY 23, 2022</p>
+          <h2 class="article-title" id="article-title">Blog three</h2>
+          <p class="article-body-preview" id="article-body-preview">
+            I'm excited to start a new learning journey as a Scrimba Bootcamp
+            student! After several months of learning in the Frontend Developer
+            Career Path.
+          </p>
+        </article>
+      </section>
+      <!-- For JS -->
+      <section
+        class="article article-opened"
+        id="article article-opened"
+      ></section>
+
+      <button
+        class="article-listing-button-open"
+        id="article-listing-button-open"
+        data-close="close"
+      >
+        View More
+      </button>
+      <!-- For JS -->
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer-text" id="footer-text">
+        <p class="footer-title" id="footer-title">My Learning Journal</p>
+        <p class="footer-copyright" id="footer-copyright">Copyright ©2023</p>
+      </div>
+    </footer>
+    <!--   <img src="/images/blog-image-01.png"> -->
+
+    <script src="home.js"></script>
+  </body>
 </html>

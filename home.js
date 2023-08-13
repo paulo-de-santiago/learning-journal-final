@@ -1,37 +1,32 @@
+const articleComplete = document.getElementById("article article-opened");
+const articleButton = document.getElementById("article-listing-button-open");
 
-const articleComplete = document.getElementById("article article-opened")
-const articleButton = document.getElementById("article-listing-button-open")
-
-
-
- articleButton.addEventListener("click", function(e)  {
-
-checkStatus()
-
-     
-})
-
+// @ts-ignore
+articleButton.addEventListener("click", function (e) {
+  checkStatus();
+});
 
 function checkStatus() {
-      
-   if(articleButton.id === "article-listing-button-open") {
-     articleButton.id = "article-listing-button-close" 
-     articleButton.innerText = 'View Less';
-     render()
+  // @ts-ignore
+  if (articleButton.id === "article-listing-button-open") {
+    // @ts-ignore
+    articleButton.id = "article-listing-button-close";
+    // @ts-ignore
+    articleButton.innerText = "View Less";
+    render();
 
-   } else if (articleButton.id === "article-listing-button-close") {
-     articleButton.id = "article-listing-button-open" 
-     articleButton.innerText = 'View More';
-     articleComplete.innerHTML = ''
-   }
-
+    // @ts-ignore
+  } else if (articleButton.id === "article-listing-button-close") {
+    // @ts-ignore
+    articleButton.id = "article-listing-button-open";
+    // @ts-ignore
+    articleButton.innerText = "View More";
+    // @ts-ignore
+    articleComplete.innerHTML = "";
+  }
 }
 
-  
-
 function render() {
-
-  
   let articles = `<section class="article" id="article">
             <article class="article-post" id="article-post">
                 <img src="/images/blog-image-02.png" alt="Computer screen with React symbol and code.">
@@ -52,14 +47,11 @@ function render() {
                 <p class="article-body-preview" id="article-body-preview">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>   
             </article>
             </section>
-             `  
+             `;
 
-        articleComplete.innerHTML = articles 
-  
+  // @ts-ignore
+  articleComplete.innerHTML = articles;
 }
-
-
-
 
 /* function seeMoreLess() {
   let dots = document.getElementById("dots");

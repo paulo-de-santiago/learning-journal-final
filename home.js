@@ -27,7 +27,7 @@ function checkStatus() {
 }
 
 function render() {
-  let articles = `<section class="article" id="article">
+  let articles = `<section class="article article-opened" id="article article-opened">
             <article class="article-post" id="article-post">
                 <img src="/images/blog-image-02.png" alt="Computer screen with React symbol and code.">
                 <p class="article-date" id="article-date">JULY 23, 2022</p>

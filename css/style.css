@@ -421,6 +421,10 @@ p {
         grid-area: header;
     }
 
+    .container-bio-text {
+        width: 80%;
+        align-self: center;
+    }
     .container-text {
         grid-area: text;
     }

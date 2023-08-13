@@ -31,8 +31,7 @@ body {
 }
 
 .icon { 
-    margin-top: 2.1rem;
-    margin-left: 1rem;
+    align-self: center;
     padding: 0.188rem;
     width: 1.448rem;
     height: 1.448rem;

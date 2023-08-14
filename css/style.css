@@ -406,33 +406,39 @@ p {
     }
 
     /* Section bio */
-    .section-bio {
+     .section-bio {
         display: grid;
         grid-template-areas: "header header header"
                     "text text text"
+                    "img img img"
                     "posts posts posts";
         
         margin-top: 50px;
     }
     .container-bio {
         margin-top: 50px;
-    }
+
+    } 
     .container-bio-header {
         grid-area: header;
     }
 
+    .img-bio {
+       max-width: 90%;
+       margin: 0 auto;
+    }
     .container-bio-text {
-        width: 80%;
+        width: 90%;
         align-self: center;
     }
     .container-text {
         grid-area: text;
     }
 
-    .container-posts{
-        grid-area: posts;
+    .article{
+        display: flex;
     }
-
+ 
 } 
     
 

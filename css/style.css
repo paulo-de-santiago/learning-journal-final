@@ -369,6 +369,74 @@ p {
         flex: 33%;
         max-width: 100%;
     }
+
+
+    /* Typography */
+
+/* Hero */
+    .date-hero,
+    .article-date {
+        font-size: 1rem;
+    }
+
+
+    .title-hero,
+    .article-title,
+    .footer-title {
+        line-height: 110%; 
+    }
+
+    .title-hero {
+        font-size: 2rem;
+        letter-spacing: -0.96px;
+    }
+
+    .text-hero {
+        font-size: 1.5rem;
+    }
+
+
+    /*Main List*/
+    .article-title {
+        font-size: 2rem; 
+    }
+
+    .article-body-preview {
+        font-size: 1.5rem ; /* 16px */
+        line-height: 130%; 
+    }
+
+
+    /* Button */
+
+    .article-listing-button-open,
+    .article-listing-button-close {
+        font-size: 1rem;
+    }
+
+    .article-listing-button-open:hover,
+    .article-listing-button-open:focus,
+    .article-listing-button-close:hover,
+    .article-listing-button-close:focus {
+        font-size: 1.1rem;
+        height: 35px;
+    }
+
+
+    /* Footer */
+
+    .footer-title,
+    .footer-copyright {	 
+        font-size: 0.938rem;
+    }
+
+    .footer-title {
+        letter-spacing: -0.36px;   
+    }
+
+    .footer-copyright {
+        line-height: 125%; /* 15px */
+    }
   }
 
 /* About Me */

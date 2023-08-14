@@ -409,16 +409,13 @@ p {
      .section-bio {
         display: grid;
         grid-template-areas: "header header header"
-                    "text text text"
-                    "img img img"
-                    "posts posts posts";
-        
-        margin-top: 50px;
+                    "text text text";     
+        margin-top: 30px;
     }
-    .container-bio {
-        margin-top: 50px;
+/*     .container-bio {
+        margin-top: 30px;
 
-    } 
+    }  */
     .container-bio-header {
         grid-area: header;
     }
@@ -428,8 +425,8 @@ p {
        margin: 0 auto;
     }
     .container-bio-text {
-        width: 90%;
-        align-self: center;
+        width: 80%;
+        margin: 0 auto;
     }
     .container-text {
         grid-area: text;

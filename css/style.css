@@ -28,7 +28,7 @@ body {
 .header {
     text-align: center;
     justify-content: space-between;
-
+    padding:0 25px;
 }
 
 .icon { 
@@ -51,7 +51,6 @@ body {
     
     color: #090909;
     text-align: right;
-     font-size: 3vw;/*  0.625rem; */ /*  12px */
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -357,6 +356,12 @@ p {
    /* Media queries */
 
 /* General*/
+
+@media screen and (min-width: 1500px) {
+    .header-secondary {
+        font-size: 35.408px; /* 3vw */
+    } 
+}
 
 @media screen and (min-width: 600px)  {
 
